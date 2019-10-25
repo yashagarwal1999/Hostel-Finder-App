@@ -6,7 +6,7 @@ The app pin points the corresponding hostel location on the map and the user can
 Used Firebase Cloud Firestore and Firebase Auth.
  
  Dependency Used:
- Glide
- Google MapFirebase
- de.hdodenhof:circleimageview:3.0.1
+ Glide,
+  Google MapFirebase,
+  de.hdodenhof:circleimageview:3.0.1.
  
