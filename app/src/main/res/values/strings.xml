@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Profile2</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="BED">
+        <item>0 Bedrooms 1 Hall</item>
+        <item>1 Bedroom</item>
+        <item>2 Bedroom</item>
+        <item>3 Bedroom</item>
+    </string-array>
+
+    <string-array name="BATH">
+
+        <item>1 Bathroom</item>
+        <item>2 Bathroom</item>
+        <item>3 Bathroom</item>
+    </string-array>
+    <string-array name="PEO">
+
+        <item>1 Person</item>
+        <item>2 Person</item>
+        <item>3 Person</item>
+        <item>4 Person</item>
+        <item>5 Person</item>
+        <item>6 Person</item>
+    </string-array>
+    <string-array name="TY">
+
+        <item>Flat</item>
+        <item>Hostel</item>
+        <item>Paying Guest</item>
+        <item>Cott basis</item>
+
+    </string-array>
+    <string-array name="LoginType">
+
+        <item>User</item>
+        <item>Hostel Owner</item>
+
+
+    </string-array>
+    <string-array name="HF">
+        <item>Boys</item>
+        <item>Girls</item>
+    </string-array>
+
+
+</resources>

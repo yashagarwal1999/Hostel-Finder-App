@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".details">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:text="Name of Hostel:"
+                            android:layout_weight="1"
+                            android:textColor="#000"/>
+                        <EditText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/NameH"
+                            android:textSize="21sp"
+                            android:layout_weight="11"
+                            android:padding="5dp"
+                            android:hint="Name of Hostel:"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address of Hostel:"
+                            android:layout_weight="1"
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            />
+                        <EditText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:id="@+id/add"
+                            android:padding="5dp"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:hint="Address"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Distance From Pict(in Km): "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:textColor="#000"
+                            />
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:id="@+id/dist"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:hint="Distance in Km"
+                            android:padding="5dp"
+                            />
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rent(monthly) Per person: "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:layout_weight="3"
+                            android:textColor="#000"
+                            ></TextView>
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:id="@+id/rp"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:padding="5dp"
+                            android:inputType="phone"
+                            android:hint="Rent per person in Rs"
+                            ></EditText>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rent Total: "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                        <EditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/rt"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:padding="5dp"
+                            android:inputType="phone"
+                            android:hint="Number of people* Rent per person"
+                            ></EditText>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hostel For: "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                        <Spinner
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/hf"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:padding="5dp"
+
+                            android:entries="@array/HF"
+                            ></Spinner>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number of Bedrooms: "
+                            android:layout_weight="3"
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                        <Spinner
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:id="@+id/bed"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:padding="5dp"
+                            android:entries="@array/BED"
+                            ></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number of Bathrooms: "
+                            android:layout_weight="3"
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                        <Spinner
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:id="@+id/nb"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:padding="5dp"
+                            android:entries="@array/BATH"
+                            ></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number of people: "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+
+                        <Spinner
+
+                            android:id="@+id/np"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:entries="@array/PEO"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            android:textSize="21sp"></Spinner>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type: "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                        <Spinner
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/type"
+                            android:textSize="21sp"
+                            android:textColor="#000"
+                            android:padding="5dp"
+                            android:entries="@array/TY"
+                            ></Spinner>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number: "
+                            android:textSize="21sp"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                        <EditText
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+android:maxLength="10"
+                            android:id="@+id/phone1"
+                            android:textSize="21sp"
+                            android:layout_weight="11"
+                            android:padding="5dp"
+                            android:hint="Phone Number"
+                            android:inputType="phone"
+                            android:textColor="#000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/choose"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/selector_xml_btn_yellow"
+                            android:text="Choose Image of hostel:"></Button></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No image selected"
+                            android:textSize="21sp"
+                            android:id="@+id/SelectedImage"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            ></TextView>
+                      </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/LOcation"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/selector_xml_btn_yellow"
+                            android:text="Record Hostel Location"></Button></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:id="@+id/SUBMIT"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/selector_xml_btn_yellow"
+                            android:text="Submit"></Button></LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

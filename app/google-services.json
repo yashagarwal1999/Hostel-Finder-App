@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "459838382185",
+    "firebase_url": "https://hostelfinder-c8791.firebaseio.com",
+    "project_id": "hostelfinder-c8791",
+    "storage_bucket": "hostelfinder-c8791.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459838382185:android:cd6b4fd253aad90adb82f8",
+        "android_client_info": {
+          "package_name": "com.example.profile2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459838382185-hpb333pv7l7nounak7l5n6d7mi6gt55c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.profile2",
+            "certificate_hash": "425bfcce7baab881771cfdad559cda229121966a"
+          }
+        },
+        {
+          "client_id": "459838382185-nngo95m2cpc476ihc0dftmhale2rr7a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS7v5wx0vTpTNw2g0eMqKS7C-Ng_88sx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459838382185-nngo95m2cpc476ihc0dftmhale2rr7a1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

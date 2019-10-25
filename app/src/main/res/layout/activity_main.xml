@@ -1,0 +1,81 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+
+    >
+    <!--android:background="@mipmap/back_login"-->
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_house"
+android:layout_marginTop="50dp"
+        ></ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/mail"
+        android:hint="Username"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:paddingLeft="0dp"
+
+        android:drawablePadding="5dp"
+        android:textColorHint="#999"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        />
+<!--        android:drawableLeft="@mipmap/account"-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:paddingLeft="0dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="#999"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+
+        />
+<!--        android:drawableLeft="@mipmap/lock"-->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="SignIn"
+        android:id="@+id/button"
+        android:background="@drawable/selector_xml_btn_yellow"
+        android:layout_gravity="center_horizontal"
+        android:onClick="checkLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="New User Signup?"
+        android:id="@+id/register"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        />
+
+</LinearLayout>
+</ScrollView>
